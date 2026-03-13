@@ -1,9 +1,12 @@
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import StorageRecorder.*;
+
 
 public class Menu extends JFrame {
-   JButton b1 , b2 , b3 , b4 , exit  ;
+   JButton b1 , b2 , b3 , b4 , b5, exit  ;
    public Menu(){
        super("Main Menu");
        setSize(800 , 800) ;
@@ -38,6 +41,18 @@ public class Menu extends JFrame {
                 }
 
            }) ;
+           b4 = new JButton("STORAGE RECORDER") ;
+       
+       b4.setBounds(250 , 400 , 300 , 35 ) ;
+       add(b4) ;
+       b4.addActionListener(new ActionListener() {
+               public void actionPerformed(ActionEvent a){ 
+                 new Sample4() ;
+		
+                }
+
+           }) ;
+
           
 
        exit = new JButton("Exit") ;
