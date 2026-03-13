@@ -1,8 +1,8 @@
 
+import StorageRecorder.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-import StorageRecorder.*;
 
 
 public class Menu extends JFrame {
@@ -13,7 +13,7 @@ public class Menu extends JFrame {
        setLayout(null) ;
        b1 = new JButton("ADDER") ;
 
-       b1.setBounds(350 , 100 , 100 , 35 ) ;
+       b1.setBounds(250 , 100 , 300 , 35 ) ;
        add(b1) ;
        b1.addActionListener(new ActionListener() {
                public void actionPerformed(ActionEvent a){ new Inter() ; //  this will run the code in the constructor so it will make the frame and everything else

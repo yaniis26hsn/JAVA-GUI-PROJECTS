@@ -1,2 +1,2 @@
 # JAVA-GUI-PROJECTS
-using swing and jwt , i made some utilities .
+using swing and jwt , we made some utilities .

@@ -70,6 +70,7 @@ public class Sample4 extends JFrame{
                      tf2.setText("");
                  } catch (NumberFormatException e) {
                      System.out.println("you should input an integer ");
+                     lastId-- ; // to prevent the id from increasing , i could just lastId ++ ; inside catch but however 
                  }
                  lastId ++ ;
             }
