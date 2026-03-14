@@ -3,10 +3,12 @@ import StorageRecorder.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import LogIn.* ;
+import Calculator.* ;
 
 
 public class Menu extends JFrame {
-   JButton b1 , b2 , b3 , b4 , b5, exit  ;
+   JButton b1 , b2 , b3 , b4 , b5 , b6, exit  ;
    public Menu(){
        super("Main Menu");
        setSize(800 , 800) ;
@@ -52,8 +54,22 @@ public class Menu extends JFrame {
                 }
 
            }) ;
+         b5 = new JButton("LOG IN") ;
+          b5.setBounds(250 , 500 , 300 ,35) ;
+          add(b5) ;
+          b5.addActionListener(e -> {
+          javax.swing.SwingUtilities.invokeLater(() -> new log().setVisible(true));
+          });
 
-          
+          b6 = new JButton("CALCULATOR") ;
+          b6.setBounds(250 , 600 , 300 ,35) ;
+          add(b6) ;
+           b6.addActionListener(new ActionListener() {
+
+           public void actionPerformed(ActionEvent a) {
+               new Calculator() ;
+           }
+        });
 
        exit = new JButton("Exit") ;
        exit.setBounds(350 , 700 , 100 , 35 ) ;

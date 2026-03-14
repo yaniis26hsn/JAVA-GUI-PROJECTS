@@ -1,0 +1,11 @@
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\CurrancyConverter.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\Inter.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\Main.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\Menu.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\Window.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\Calculator\Calculator.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\Calculator\Operation.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\LogIn\log.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\StorageRecorder\Display.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\StorageRecorder\Item.java 
+C:\Users\Utilisateur\programming\github\JAVA-GUI-PROJECTS\src\StorageRecorder\Sample4.java 

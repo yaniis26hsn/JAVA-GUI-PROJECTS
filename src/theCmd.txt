@@ -1,5 +1,0 @@
-Compiling :
-javac *.java StorageRecorder\*.java
-
-and then to run : 
-java Main
