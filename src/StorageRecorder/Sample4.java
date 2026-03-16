@@ -8,7 +8,7 @@ import javax.swing.*;
 public class Sample4 extends JFrame{
     JTextField tf1 , tf2 ;
     JButton show , add , quit ;
-     int lastId ; // by default it starts by 0 and it increases with each item added
+     int lastId ; // by default it starts by 0 and it increases with each item added , no need to initiate it
     ArrayList <Item>  myItems ; 
     JLabel lb1 , lb2 ;
 
@@ -60,12 +60,30 @@ public class Sample4 extends JFrame{
                 //     System.out.println("you should input an integer ");
                 // }
                 // lastId ++ ;
+
+
+                
+                 // i could here verify if item already exists , it will be added only to the old one 
+                    // no new item will be created with the same name 
+                    // but like that , we can't differ between the two addition operations , but in case you don't care you may replace by this instead: 
+                   // boolean alreadyExists = false ; 
+                    // int newQuantity = Integer.parseInt(tf2.getText()) ;
+                    // for(int i = 0 ; i<myItems.length ; i++){
+     //                if(myItems.get(i).equals(tf1.getText())) {
+     //                      alreadyExists = true ; 
+                        //   myItems.get(i).quantity += newQuantity ;
+     //                      break ; }
+     // }
+      //  }
+      //   if(!alreadyExists){ // here we should put the remaining code cz it is a new item  }
                 Item theNewItem = new Item() ;
                 theNewItem.id = lastId ;
                 theNewItem.name = tf1.getText() ;
                 tf1.setText("");
-                  try {
+                  try {    
+
                     theNewItem.quantity = Integer.parseInt(tf2.getText()) ;
+                
                      myItems.add(theNewItem) ;
                      tf2.setText("");
                  } catch (NumberFormatException e) {

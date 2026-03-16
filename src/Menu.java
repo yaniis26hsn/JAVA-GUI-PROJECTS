@@ -1,21 +1,22 @@
 
+import Calculator.*;
+import Ilearning.*;
+import LogIn.*;
 import StorageRecorder.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.*;
-import LogIn.* ;
-import Calculator.* ;
+import java.awt.event.ActionListener ;
+import javax.swing.* ;
 
 
 public class Menu extends JFrame {
-   JButton b1 , b2 , b3 , b4 , b5 , b6, exit  ;
+   JButton b1 , b2 , b3 , b4 , b5 , b6, b7 , exit  ;
    public Menu(){
        super("Main Menu");
        setSize(800 , 800) ;
        setLayout(null) ;
        b1 = new JButton("ADDER") ;
 
-       b1.setBounds(250 , 100 , 300 , 35 ) ;
+       b1.setBounds(250 , 5 , 300 , 35 ) ;
        add(b1) ;
        b1.addActionListener(new ActionListener() {
                public void actionPerformed(ActionEvent a){ new Inter() ; //  this will run the code in the constructor so it will make the frame and everything else
@@ -28,7 +29,7 @@ public class Menu extends JFrame {
        add(b2) ;
        b2.addActionListener(new ActionListener() {
                public void actionPerformed(ActionEvent a){ new CurrancyConverter() ; }
-
+            
            }) ;
             b3 = new JButton("TRIP") ;
        
@@ -59,6 +60,13 @@ public class Menu extends JFrame {
           add(b5) ;
           b5.addActionListener(e -> {
           javax.swing.SwingUtilities.invokeLater(() -> new log().setVisible(true));
+          });
+
+           b7 = new JButton("ILEARNING") ;
+          b7.setBounds(250 , 100 , 300 ,35) ;
+          add(b7) ;
+          b7.addActionListener(e -> {
+          javax.swing.SwingUtilities.invokeLater(() -> new exo7().setVisible(true));
           });
 
           b6 = new JButton("CALCULATOR") ;
